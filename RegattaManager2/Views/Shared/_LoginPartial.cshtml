@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a class="nav-link" href="#">Regatten</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Stammdaten</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Bootsklassen</a>
+            <a class="dropdown-item" href="#">Altersklassen</a>
+            <a class="dropdown-item" href="#">Rennklassen</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Startgebühren</a>
+            <a class="dropdown-item" href="#">Zeltplatzgebühren</a>
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Vereinsdaten</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Vereine</a>
+            <a class="dropdown-item" href="#">Mitglieder</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a  class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
+    </li>
+    <li class="nav-item">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button  type="submit" class="nav-link btn btn-link">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+}
+</ul>
