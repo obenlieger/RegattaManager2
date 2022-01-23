@@ -2352,21 +2352,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bjoer\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bjoer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DEV\\RegattaPlaner\\RegattaManager2\\RegattaManager2\\RegattaManager2.csproj",
+      "projectUniqueName": "C:\\DEV\\RegattaManager2\\RegattaManager2\\RegattaManager2.csproj",
       "projectName": "RegattaManager2",
-      "projectPath": "D:\\DEV\\RegattaPlaner\\RegattaManager2\\RegattaManager2\\RegattaManager2.csproj",
+      "projectPath": "C:\\DEV\\RegattaManager2\\RegattaManager2\\RegattaManager2.csproj",
       "packagesPath": "C:\\Users\\bjoer\\.nuget\\packages\\",
-      "outputPath": "D:\\DEV\\RegattaPlaner\\RegattaManager2\\RegattaManager2\\obj\\",
+      "outputPath": "C:\\DEV\\RegattaManager2\\RegattaManager2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\bjoer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
